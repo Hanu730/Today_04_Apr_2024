@@ -1,0 +1,678 @@
+"FOB_ChangeList_7 As screen.'tabletAutoLayout_HeaderMainFooter_ver1.0'":
+
+    ScreenContainer1_6 As groupContainer.verticalAutoLayoutContainer:
+        Height: =Parent.Height
+        LayoutAlignItems: =LayoutAlignItems.Stretch
+        LayoutDirection: =LayoutDirection.Vertical
+        LayoutMode: =LayoutMode.Auto
+        Width: =Parent.Width
+        ZIndex: =1
+
+        HeaderContainer1_6 As groupContainer.horizontalAutoLayoutContainer:
+            AlignInContainer: =AlignInContainer.SetByContainer
+            DropShadow: =DropShadow.Light
+            Fill: =RGBA(50, 86, 160, 1)
+            FillPortions: =0
+            Height: =40
+            LayoutMinHeight: =100
+            LayoutMinWidth: =250
+            LayoutMode: =LayoutMode.Auto
+            ZIndex: =2
+
+            lbl_Title_FOBChangeList_6 As label:
+                Color: =RGBA(255, 255, 255, 1)
+                Fill: =RGBA(50, 86, 160, 1)
+                FontWeight: =FontWeight.Bold
+                Height: =Parent.Height
+                Size: =16
+                Text: ="YCA Sales Orders - FOB Change List"
+                Width: =HeaderContainer1_6.Width
+                ZIndex: =1
+
+        MainSectionContainer1_6 As groupContainer.verticalAutoLayoutContainer:
+            DropShadow: =DropShadow.Light
+            LayoutMinHeight: =100
+            LayoutMinWidth: =250
+            LayoutMode: =LayoutMode.Auto
+            ZIndex: =3
+
+            Gallery_Container_6 As groupContainer.verticalAutoLayoutContainer:
+                LayoutDirection: =LayoutDirection.Vertical
+                LayoutMinHeight: =100
+                LayoutMinWidth: =250
+                LayoutMode: =LayoutMode.Auto
+                LayoutOverflowX: =LayoutOverflow.Scroll
+                LayoutOverflowY: =LayoutOverflow.Scroll
+                Width: =MainSectionContainer1_6.Width
+                ZIndex: =1
+
+                GalleryHeader_Container_6 As groupContainer.horizontalAutoLayoutContainer:
+                    Fill: =ColorFade(lbl_Title_FOBChangeList_6.Fill,0.2)
+                    FillPortions: =0
+                    Height: =HeaderContainer1_6.Height
+                    LayoutMinHeight: =100
+                    LayoutMinWidth: =250
+                    LayoutMode: =LayoutMode.Auto
+                    Width: =Parent.Width
+                    ZIndex: =1
+
+                    lbl_CheckBox_2 As label:
+                        AlignInContainer: =AlignInContainer.Stretch
+                        Color: =RGBA(255, 255, 255, 1)
+                        FillPortions: =1
+                        LayoutMinWidth: =25
+                        Size: =10
+                        Text: =""
+                        Visible: =false
+                        ZIndex: =1
+
+                    lbl_YHQ_So_No_4 As label:
+                        AlignInContainer: =AlignInContainer.Stretch
+                        Color: =RGBA(255, 255, 255, 1)
+                        FillPortions: =2
+                        LayoutMinWidth: =50
+                        Size: =10
+                        Text: ="YHQ SO No"
+                        ZIndex: =2
+
+                    lbl_YHQ_ItemNo_4 As label:
+                        AlignInContainer: =AlignInContainer.Stretch
+                        Color: =RGBA(255, 255, 255, 1)
+                        FillPortions: =1
+                        LayoutMinWidth: =25
+                        Size: =10
+                        Text: ="Item No"
+                        ZIndex: =3
+
+                    lbl_Model_4 As label:
+                        AlignInContainer: =AlignInContainer.Stretch
+                        Color: =RGBA(255, 255, 255, 1)
+                        FillPortions: =2
+                        LayoutMinWidth: =50
+                        Size: =10
+                        Text: ="Model"
+                        ZIndex: =4
+
+                    lbl_Qty_4 As label:
+                        AlignInContainer: =AlignInContainer.Stretch
+                        Color: =RGBA(255, 255, 255, 1)
+                        FillPortions: =1
+                        LayoutMinWidth: =25
+                        Size: =10
+                        Text: ="Qty"
+                        Width: =50
+                        ZIndex: =5
+
+                    lbl_PO_No_4 As label:
+                        AlignInContainer: =AlignInContainer.Stretch
+                        Color: =RGBA(255, 255, 255, 1)
+                        FillPortions: =2
+                        LayoutMinWidth: =50
+                        Size: =10
+                        Text: ="P/O No"
+                        Width: |
+                            =150
+                        ZIndex: =6
+
+                    lbl_Estd_FOB_4 As label:
+                        AlignInContainer: =AlignInContainer.Stretch
+                        Color: =RGBA(255, 255, 255, 1)
+                        FillPortions: =2
+                        LayoutMinWidth: =50
+                        Size: =10
+                        Text: ="Estd FOB"
+                        ZIndex: =7
+
+                    lbl_YCA_SO_No_4 As label:
+                        AlignInContainer: =AlignInContainer.Stretch
+                        Color: =RGBA(255, 255, 255, 1)
+                        FillPortions: =2
+                        LayoutMinWidth: =50
+                        Size: =10
+                        Text: ="YCA SO No"
+                        ZIndex: =8
+
+                    lbl_YCA_ItemNo_4 As label:
+                        AlignInContainer: =AlignInContainer.Stretch
+                        Color: =RGBA(255, 255, 255, 1)
+                        FillPortions: =1
+                        LayoutMinWidth: =25
+                        Size: =10
+                        Text: ="Item No"
+                        ZIndex: =9
+
+                    lbl_NewShipDate_4 As label:
+                        AlignInContainer: =AlignInContainer.Stretch
+                        Color: =RGBA(255, 255, 255, 1)
+                        FillPortions: =2
+                        LayoutMinWidth: =50
+                        Size: =10
+                        Text: ="New Ship Date"
+                        ZIndex: =10
+
+                    lbl_Cust_Name_4 As label:
+                        AlignInContainer: =AlignInContainer.Stretch
+                        Color: =RGBA(255, 255, 255, 1)
+                        FillPortions: =3
+                        LayoutMinWidth: =75
+                        Size: =10
+                        Text: ="Cust Name"
+                        ZIndex: =11
+
+                    lbl_Cust_Email_4 As label:
+                        AlignInContainer: =AlignInContainer.Stretch
+                        Color: =RGBA(255, 255, 255, 1)
+                        FillPortions: =3
+                        LayoutMinWidth: =75
+                        Size: =10
+                        Text: ="Cust Email"
+                        ZIndex: =12
+
+                    lbl_Sales_Rep_Email_4 As label:
+                        AlignInContainer: =AlignInContainer.Stretch
+                        Color: =RGBA(255, 255, 255, 1)
+                        FillPortions: =3
+                        LayoutMinWidth: =75
+                        Size: =10
+                        Text: ="Sales Rep Email"
+                        ZIndex: =13
+
+                    lbl_Status_2 As label:
+                        AlignInContainer: =AlignInContainer.Stretch
+                        Color: =RGBA(255, 255, 255, 1)
+                        FillPortions: =1
+                        LayoutMinWidth: =60
+                        Size: =10
+                        Text: ="Status"
+                        ZIndex: =14
+
+                    lbl_Action_2 As label:
+                        AlignInContainer: =AlignInContainer.Stretch
+                        Color: =RGBA(255, 255, 255, 1)
+                        FillPortions: =2
+                        LayoutMinWidth: =25
+                        Size: =10
+                        Text: ="Action"
+                        ZIndex: =15
+
+                    Ic_Filter_2 As icon.Filter:
+                        AlignInContainer: =AlignInContainer.Center
+                        Color: =RGBA(255, 255, 255, 1)
+                        Height: =30
+                        Icon: =Icon.Filter
+                        LayoutMinHeight: =40
+                        OnSelect: =Set(VshowPanel,!VshowPanel)
+                        Width: =30
+                        ZIndex: =16
+
+                gal_TaskData_6 As gallery.galleryVertical:
+                    DelayItemLoading: =true
+                    Items: |-
+                        =Search(
+                            FOB_ChangeList,
+                            txt_YHQ_SalesOrderNo_4.Text,
+                            "YHQSalesOrderNo"
+                        )
+                    Layout: =Layout.Vertical
+                    LayoutMinHeight: =287
+                    LayoutMinWidth: =320
+                    LoadingSpinner: =LoadingSpinner.Data
+                    TemplatePadding: =0
+                    TemplateSize: =HeaderContainer1_6.Height-10
+                    ZIndex: =2
+
+                    TaskData_Container_5 As groupContainer.horizontalAutoLayoutContainer:
+                        DropShadow: =DropShadow.Light
+                        Height: =gal_TaskData_6.TemplateHeight
+                        LayoutMode: =LayoutMode.Auto
+                        Width: =GalleryHeader_Container_6.Width
+                        ZIndex: =1
+
+                        Checkbox2_1 As checkbox:
+                            AlignInContainer: =AlignInContainer.Center
+                            Height: =30
+                            LayoutMinWidth: =40
+                            OnCheck: |-
+                                =If( !IsBlank( 
+                                        LookUp( CheckedItems, ID = ThisItem.ID )
+                                    ),
+                                   // Remove( CheckedItems, ThisItem ),
+                                    Collect( CheckedItems, ThisItem )
+                                )
+                            Text: =""
+                            Visible: =false
+                            Width: =lbl_CheckBox_2.Width
+                            X: |
+                                =0
+                            ZIndex: =1
+
+                        lbl_gal_YHQ_SO_No_1 As label:
+                            AlignInContainer: =AlignInContainer.Stretch
+                            AutoHeight: =true
+                            LayoutMinWidth: =30
+                            Size: =10
+                            Text: =ThisItem.'YHQ Sales Order No'
+                            Width: =lbl_YHQ_So_No_4.Width
+                            X: =lbl_YHQ_So_No_4.X
+                            ZIndex: =2
+
+                        lbl_gal_YHQ_ItemNo_1 As label:
+                            AlignInContainer: =AlignInContainer.Stretch
+                            AutoHeight: =true
+                            LayoutMinWidth: =30
+                            Size: =10
+                            Text: =Value(ThisItem.'YHQ Sales Order Item No')
+                            Width: =lbl_YHQ_ItemNo_4.Width
+                            X: =lbl_YHQ_ItemNo_4.X
+                            ZIndex: =3
+
+                        lbl_gal_Model_1 As label:
+                            AlignInContainer: =AlignInContainer.Stretch
+                            AutoHeight: =true
+                            LayoutMinWidth: =30
+                            Size: =10
+                            Text: =ThisItem.Model
+                            Width: =lbl_Model_4.Width
+                            X: =lbl_Model_4.X
+                            ZIndex: =4
+
+                        lbl_gal_Qty_1 As label:
+                            AlignInContainer: =AlignInContainer.Stretch
+                            AutoHeight: =true
+                            LayoutMinWidth: =30
+                            Size: =10
+                            Text: =ThisItem.Qty
+                            Width: =lbl_Qty_4.Width
+                            X: =lbl_Qty_4.X
+                            ZIndex: =5
+
+                        lbl_gal_PO_No_1 As label:
+                            AlignInContainer: =AlignInContainer.Stretch
+                            AutoHeight: =true
+                            LayoutMinWidth: =30
+                            Size: =10
+                            Text: =ThisItem.PO_No
+                            Width: =lbl_PO_No_4.Width
+                            X: =lbl_PO_No_4.X
+                            ZIndex: =6
+
+                        lbl_gal_Estd_No_1 As label:
+                            AlignInContainer: =AlignInContainer.Stretch
+                            AutoHeight: =true
+                            LayoutMinWidth: =30
+                            Size: =10
+                            Text: =ThisItem.'Estimated FOB'
+                            Width: =lbl_Estd_FOB_4.Width
+                            X: =lbl_Estd_FOB_4.X
+                            ZIndex: =7
+
+                        lbl_gal_YCA_SO_No_1 As label:
+                            AlignInContainer: =AlignInContainer.Stretch
+                            AutoHeight: =true
+                            LayoutMinWidth: =30
+                            Size: =10
+                            Text: =ThisItem.'YCA Sales Order No'
+                            Width: =lbl_YCA_SO_No_4.Width
+                            X: =lbl_YCA_SO_No_4.X
+                            ZIndex: =8
+
+                        lbl_gal_YCA_ItemNo_1 As label:
+                            AlignInContainer: =AlignInContainer.Stretch
+                            AutoHeight: =true
+                            LayoutMinWidth: =30
+                            Size: =10
+                            Text: =Value(ThisItem.'YCA Item No')
+                            Width: =lbl_YCA_ItemNo_4.Width
+                            X: =lbl_YCA_ItemNo_4.X
+                            ZIndex: =9
+
+                        txt_NewShipDate_1 As text:
+                            AlignInContainer: =AlignInContainer.Center
+                            BorderThickness: =1.5
+                            Default: =Text(ThisItem.'New Ship Date')
+                            FocusedBorderThickness: =2
+                            Height: =30
+                            HoverFill: =RGBA(0, 0, 0, 0)
+                            RadiusBottomLeft: =0
+                            RadiusBottomRight: =0
+                            RadiusTopLeft: =0
+                            RadiusTopRight: =0
+                            Size: =10
+                            Width: =lbl_NewShipDate_4.Width
+                            X: =lbl_NewShipDate_4.X
+                            ZIndex: =10
+
+                        lbl_gal_CustName_1 As label:
+                            AlignInContainer: =AlignInContainer.Stretch
+                            AutoHeight: =true
+                            LayoutMinWidth: =30
+                            Size: =10
+                            Text: =ThisItem.'Customer Name'
+                            Width: =lbl_Cust_Name_4.Width
+                            X: =lbl_Cust_Name_4.X
+                            ZIndex: =11
+
+                        txt_CustEmail_1 As text:
+                            AlignInContainer: =AlignInContainer.Center
+                            BorderThickness: =1.5
+                            Default: =ThisItem.'Customer Email'
+                            FocusedBorderThickness: =2
+                            Height: =30
+                            HoverFill: =RGBA(0, 0, 0, 0)
+                            RadiusBottomLeft: =0
+                            RadiusBottomRight: =0
+                            RadiusTopLeft: =0
+                            RadiusTopRight: =0
+                            Size: =10
+                            Width: =lbl_Cust_Email_4.Width
+                            X: =lbl_Cust_Email_4.X
+                            ZIndex: =12
+
+                        txt_SalesRepEmail_1 As text:
+                            AlignInContainer: =AlignInContainer.Center
+                            BorderThickness: =1.5
+                            Default: =ThisItem.'Sales Rep Email'
+                            FocusedBorderThickness: =2
+                            Height: =30
+                            HoverFill: =RGBA(0, 0, 0, 0)
+                            RadiusBottomLeft: =0
+                            RadiusBottomRight: =0
+                            RadiusTopLeft: =0
+                            RadiusTopRight: =0
+                            Size: =10
+                            Width: =lbl_Sales_Rep_Email_4.Width
+                            X: =lbl_Sales_Rep_Email_4.X
+                            ZIndex: =13
+
+                        Ic_Status_1 As icon.Check:
+                            AlignInContainer: =AlignInContainer.Center
+                            Color: =//If(ThisItem.Status="Pending",Color.Brown,Color.Green)
+                            Height: =20
+                            Icon: |+
+                                =//If(ThisItem.Status="Completed",Icon.Check,Icon.Information)
+                                
+                                
+                                
+                                
+                                
+                                
+                                //If(ThisItem.Status="Completed",Icon.Check || ThisItem.Status="Pending",Icon.Cancel,Color.Green,Color.Red)
+                                
+                            LayoutMinWidth: =30
+                            Width: |+
+                                =lbl_Status_2.Width
+                                
+                            X: |
+                                =0
+                            ZIndex: =14
+
+                        btn_gal_SendEmail_1 As button:
+                            AlignInContainer: =AlignInContainer.Center
+                            DisplayMode: =If (ThisItem.Status="Completed", DisplayMode.Disabled, DisplayMode.Edit)
+                            Fill: =RGBA(127, 178, 57, 1)
+                            Height: =23
+                            HoverFill: =ColorFade(Self.BorderColor, 1%)
+                            OnSelect: |+
+                                =Set(
+                                    VarEmail,
+                                    SendEmail.Run(
+                                        ThisItem.'Sales Rep Email',
+                                        "Sales Report",
+                                        ThisItem.'YCA Sales Order No',
+                                        ThisItem.'YCA Item No',
+                                        ThisItem.'New Ship Date',
+                                        ThisItem.'Customer Name',
+                                        User().FullName
+                                    ).output
+                                );
+                                
+                                Notify(
+                                    " Mail Send Sucessfully",
+                                    NotificationType.Success
+                                );
+                                
+                                
+                                
+                                
+                                /*Office365Outlook.SendEmail(
+                                    ThisItem.'Sales Rep Email',
+                                    "Sales Report",
+                                    "Dear "&&ThisItem.'Customer Name'&&" ")
+                                
+                                Please be informed that the Ship-To date for the below order has been changed.
+                                
+                                YCA SO NO : "&&ThisItem.'YCA Sales Order No'&&"\n
+                                YCA Item No : "&&ThisItem.'YCA Item No'&&"\n
+                                New Ship Date : "&&Value(ThisItem.'New Ship Date')&&"\n
+                                
+                                Thanks &amp; Regards,\n
+                                "&& User().FullName&&"" )*/
+                                
+                                Set(VarEmail,SendEmail.Run(ThisItem.'Sales Rep Email',"Sales Report" ,ThisItem.'YCA Sales Order No',ThisItem.'YCA Item No',ThisItem.'New Ship Date',ThisItem.'Customer Name',User().FullName).output)
+                                
+                            Size: =10
+                            Text: ="Send Email"
+                            Visible: =If (ThisItem.Status="Completed", false, true)
+                            Width: =100
+                            X: |
+                                =lbl_Action_2.X+10
+                            ZIndex: =15
+
+                        Label2_1 As label:
+                            Height: =30
+                            OnSelect: =
+                            Text: =ThisItem.ID
+                            Visible: =false
+                            X: =40
+                            ZIndex: =16
+
+            Filter_Container_6 As groupContainer.verticalAutoLayoutContainer:
+                DropShadow: =DropShadow.ExtraBold
+                FillPortions: =0
+                LayoutDirection: =LayoutDirection.Vertical
+                LayoutGap: =10
+                LayoutMinHeight: =100
+                LayoutMinWidth: =250
+                LayoutMode: =LayoutMode.Auto
+                Visible: =VshowPanel
+                Width: =200
+                ZIndex: =2
+
+                Label4_22 As label:
+                    Align: =Align.Center
+                    AlignInContainer: =AlignInContainer.Stretch
+                    Text: |-
+                        ="YHQ Sales Order No
+                        "
+                    ZIndex: =1
+
+                txt_YHQ_SalesOrderNo_4 As text:
+                    Align: =Align.Center
+                    AlignInContainer: =AlignInContainer.Center
+                    Default: =""
+                    Height: =30
+                    HintText: ="Search "
+                    Size: =10
+                    Width: =160
+                    ZIndex: =2
+
+                Label4_23 As label:
+                    Align: =Align.Center
+                    AlignInContainer: =AlignInContainer.Stretch
+                    Text: |-
+                        ="P/O No
+                        "
+                    ZIndex: =3
+
+                "'txt_P/O No_4' As text":
+                    Align: =Align.Center
+                    AlignInContainer: =AlignInContainer.Center
+                    Default: =""
+                    Height: =30
+                    HintText: ="Search "
+                    Size: =10
+                    Width: =160
+                    ZIndex: =4
+
+                Label4_24 As label:
+                    Align: =Align.Center
+                    AlignInContainer: =AlignInContainer.Stretch
+                    Text: |-
+                        ="YCA Sales Order No
+                        "
+                    ZIndex: =5
+
+                txt_YCA_SalesOrderNo_4 As text:
+                    Align: =Align.Center
+                    AlignInContainer: =AlignInContainer.Center
+                    Default: =""
+                    Height: =30
+                    HintText: ="Search "
+                    Size: =10
+                    Width: =160
+                    ZIndex: =6
+
+                Label4_25 As label:
+                    Align: =Align.Center
+                    AlignInContainer: =AlignInContainer.Stretch
+                    Text: |-
+                        ="Customer Name
+                        "
+                    ZIndex: =7
+
+                txt_CustomerName_4 As text:
+                    Align: =Align.Center
+                    AlignInContainer: =AlignInContainer.Center
+                    Default: =""
+                    Height: =30
+                    HintText: ="Search "
+                    Size: =10
+                    Width: =160
+                    ZIndex: =8
+
+                Button1_6 As button:
+                    AlignInContainer: =AlignInContainer.Center
+                    Height: =30
+                    OnSelect: =Reset(txt_YHQ_SalesOrderNo_4)
+                    Text: ="Reset"
+                    ZIndex: =9
+
+        FooterContainer1_6 As groupContainer.horizontalAutoLayoutContainer:
+            Fill: =ColorFade(HeaderContainer1_6.Fill,0.8)
+            FillPortions: =0
+            Height: =HeaderContainer1_6.Height
+            LayoutGap: =20
+            LayoutMinHeight: =100
+            LayoutMinWidth: =250
+            LayoutMode: =LayoutMode.Auto
+            ZIndex: =4
+
+            btn_Send_Email_2 As button:
+                AlignInContainer: =AlignInContainer.Center
+                BorderThickness: =3
+                DisabledFill: =RGBA(187, 221, 140, 1)
+                Fill: =RGBA(127,178,57,1)
+                RadiusBottomLeft: =15
+                RadiusBottomRight: =15
+                RadiusTopLeft: =15
+                RadiusTopRight: =15
+                Text: ="Send Email"
+                Visible: =false
+                Width: =150
+                ZIndex: =1
+
+            btn_Save_2 As button:
+                AlignInContainer: =AlignInContainer.Center
+                Fill: =RGBA(39, 113, 194, 1)
+                Height: =30
+                OnSelect: |
+                    =ForAll(
+                        gal_TaskData_6.AllItems,
+                        Patch(
+                            FOB_ChangeList,
+                            LookUp(
+                                FOB_ChangeList,
+                                ID = Value(Label2_1.Text)
+                            ),
+                            {
+                                //'New Ship Date': txt_NewShipDate.Text,
+                                'Customer Email': txt_CustEmail_1.Text,
+                                'Sales Rep Email': txt_SalesRepEmail_1.Text
+                            }
+                        )
+                    );
+                    Notify(
+                        " User Updated Sucessfully",
+                        NotificationType.Success
+                    );
+                    
+                    /*UpdateIf(
+                        FOB_ChangeList,
+                        true,
+                        {
+                            'Customer Email': txt_CustEmail.Text,
+                            'Sales Rep Email': txt_SalesRepEmail.Text
+                        }
+                    );
+                    
+                    ClearCollect(
+                        colDataToPatch,
+                        ShowColumns(
+                            FOB_ChangeList,
+                            "ID",
+                            "CustomerEmail",
+                            "SalesRepEmail"
+                        )
+                    );
+                    Patch(
+                        FOB_ChangeList,
+                        colDataToPatch
+                    );
+                    
+                    Notify(
+                        " User Updated Sucessfully",
+                        NotificationType.Success
+                    );*/
+                    
+                    
+                    
+                    
+                    /*ForAll(
+                        Filter(gal_TaskData_6.AllItems,
+                          Checkbox2_1.Value = true
+                        ),
+                        Patch( FOB_ChangeList,
+                          LookUp( FOB_ChangeList, ID = Label2_1.Text ),
+                          { 'Customer Email':txt_CustEmail_1 }
+                        )
+                    );
+                    Notify(
+                        " User Updated Sucessfully",
+                        NotificationType.Success
+                    );*/
+                Text: ="Save"
+                Width: =120
+                X: =200
+                ZIndex: =2
+
+            btn_Refresh_2 As button:
+                AlignInContainer: =AlignInContainer.Center
+                Fill: =RGBA(102, 182, 227, 1)
+                Height: =30
+                OnSelect: =Refresh(FOB_ChangeList)
+                Text: ="Refresh"
+                Width: =130
+                X: =50
+                ZIndex: =3
+
+    lbl_Version_2 As label:
+        Align: =Align.Right
+        Color: =RGBA(255, 255, 255, 1)
+        Size: =10
+        Text: |+
+            ="V 0.02"
+            
+        Width: =121
+        X: =1245
+        ZIndex: =2
+
